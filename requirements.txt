@@ -1,4 +1,4 @@
-flask
-pandas
+tensorflow
+streamlit
+PIL
 numpy
--e .
