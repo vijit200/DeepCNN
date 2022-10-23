@@ -1,7 +1,7 @@
 import streamlit as st
-from PIL import Image
 import tensorflow as tf
 import numpy as np
+from PIL import Image
 """
 # deep Classifier project
 """
@@ -11,6 +11,7 @@ if uploaded_file is not None:
     # To read file as bytes:
 
     image = Image.open(uploaded_file)
+
     img = image.resize((224,224))
     img_array = np.array(img)
     img_array = np.expand_dims(img_array, axis=0) # [batch_size, row, col, channel]
